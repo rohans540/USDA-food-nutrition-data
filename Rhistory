@@ -1,0 +1,43 @@
+country = c("Brazil", "China", "India", "USA")
+lifeExpectancy = c(74, 76, 65, 83, 79)
+country
+lifeExpectancy
+country[2]
+country[4]
+country[3]
+country[0]
+country[1]
+countrydata = data.frame(country, lifeExpectancy)
+lifeExpectancy = c(74, 76, 65, 83)
+lifeExpectancy
+countrydata = data.frame(country, lifeExpectancy)
+countrydata
+countrydata$population = c(199000, 1390000, 1240000, 318000)
+countrydata
+country = c("Brazil", "China", "India", "Switzerland", "USA")
+country
+lifeExpectancy = c(74, 76, 65, 83, 79)
+countrydata = data.frame(country, lifeExpectancy)
+countrydata
+countrydata$population = c(199000, 1390000, 1240000, 7997, 318000)
+countrydata
+country = c("Australia", "Greece")
+lifeExpectancy = c(81, 82)
+population = c(23050, 11125)
+newcountrydata = data.frame(country, lifeExpectancy, population)
+newcountrydata
+allcountrydata = rbind(countrydata, newcountrydata)
+allcountrydata
+getwd()
+WHO = read.csv("WHO.csv")
+str(WHO)
+summary(WHO)
+WHO_europe = subset(WHO, Region == "Europe")
+WHO_europe
+str(WHO_europe)
+ls()
+rm(WHO_europe)
+ls()
+WHO$Under15
+mean(WHO$Under15)
+q()
